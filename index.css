@@ -1,7 +1,11 @@
 .container{
     align-items: center;
+    background-color:darkgray;
+    background-image:
 }
 #legend {
-    background-color:blue;
+    height: 100px;
+    text-align:center;
+    background-color:darkgreen;
       /* color:blue; */
 }
