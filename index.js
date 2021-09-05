@@ -8,9 +8,11 @@ function akaname(){
     var day = parseInt(document.getElementById("day").value)
     var month = parseInt(document.getElementById("month").value)
     var year = document.getElementById("year").value;
-    var Male = document.getElementById("male").value;
-    var Female = document.getElementById("female").value;
-    var Rname = document.getElementById("aka-name").value;
+    var male = document.getElementById("male").value;
+    var female = document.getElementById("female").value;
+    var rname = document.getElementById("aka-name").value;
+
+    
 
 
     if (day== null || day == "", month == null || month== "", year == null || year == "") {
@@ -28,22 +30,35 @@ function akaname(){
            alert("enter valid month");
            return false;
        }
-    var yearA = year.slice(0,2);
-    alert(yearA);
-
-    // let sum =  day + 12;
-    // alert(sum);
-
     
 
+    var sliceY= year.slice(2,4);
+    var sliceC= year.slice(0,2);
+    var c= parseInt(sliceC);
+    var y= parseInt(sliceY);
+    var d= day;
+    var m=month;
+
+    var dayOfTheWeek= Math.round(( ( (c/4) - 2 * c - 1) + ((5*y/4) ) + ((26*(m+1)/10)) + d ) %7);
+    alert(dayOfTheWeek);
+    
+    if(male.checked==true) {
+     
+        for(var a=0;a < maleName.length;a++){
+            if(a===dayOfTheWeek-1){
+               rname.innerHTML="your Akan name is " + maleName[a]; 
+            }
+        }
+      }
+    
+    
+      else if(female.checked==true){
+        for(var a=0;a< femaleName.length;a++){
+            if(a===dayOfTheWeek-1){
+               rname.innerHTML= "your Akan name is " + femaleName[a];
+            }
+        }
+    
+    }
 }
 
-// function resetform(){
-//     day="";
-//     month="";
-//     year="";
-// };
-
-// if((day < 1) || (day>31) || (isNaN(day))) {
-    //     alert("Please select a valid date");
-    // 
