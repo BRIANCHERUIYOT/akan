@@ -6,45 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="./bootstrap-5.1.0-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="test/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
     <title>akaname</title>
     <!--Bootstrap CSS -->
 
 </head>
 
 <body>
-    <div class="container">
+    <div class="container bg-successs">
         <legend id="legend">KNOW YOU AKAN NAME</legend>
         <form onsubmit="akaname(event)"><br>
             <p>You are to iput your date of birth and month and year so as we can give you your name in Akan.</p>
             <p></p>
             <div class="form-group row">
                 <label for="day" class="col-sm-2 col-form-label">Day:</label>
-                <div class="col-sm-10">
-                    <input type="day" name ="day" id="day" maxlength="4">
+                <div class="col-sm-8">
+                    <input type="day" name ="day" id="day" maxlength="2">
                 </div>
             </div><br>
             <div class="form-group row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Month</label>
-                <div class="col-sm-10">
-                    <input type="month" name ="month" id="month" maxlength="4">
+                <label for="month" class="col-sm-2 col-form-label">Month</label>
+                <div class="col-sm-8">
+                    <input  name ="month" id="month" maxlength="2">
                 </div>
             </div><br>
             <div class="form-group row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Year</label>
-                <div class="col-sm-10">
+                <label for="year" class="col-sm-2 col-form-label">Year</label>
+                <div class="col-sm-8">
                     <input type="year" name ="year" id="year" maxlength="4">
                 </div>
             </div>
+            <div><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      male
+                    </label>
+                  </div><br>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      female
+                    </label>
+                  </div>
+                </div><br>
             <div>
-<button class="btn btn-primary" type="submit">Button</button>
-<input class="btn btn-primary" type="button" value="Input">
-<input class="btn btn-primary" type="submit" value="Submit">
-<input class="btn btn-primary" type="reset" value="Reset">
+                <button type="button" class="btn btn-outline-warning" onclick="">submit</button>
+                <button type="button" class="btn btn-outline-warning">reset</button>
 
             </div>
         </form>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
