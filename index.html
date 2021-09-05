@@ -18,7 +18,7 @@
 
     <div class="container bg-successs col-sm-6">
         <legend id="legend">KNOW YOUR AKAN NAME</legend>
-        <form onsubmit="akaname(event)"><br>
+        <form ><br>
             <p>You are to iput your date of birth and month and year so as we can give you your name in Akan.</p>
             <p></p>
             <div class="form-group row">
@@ -39,7 +39,7 @@
                     <input type="year" name ="year" id="year" maxlength="4" required>
                 </div>
             </div>
-            <div><br>
+            <!-- <div><br>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="male" id="male">
                     <label class="form-check-label" for="male">
@@ -52,7 +52,12 @@
                       female
                     </label>
                   </div>
-                </div><br>
+                </div><br> -->
+
+            <label>MALE</label></br>
+            <input type="radio" id="male" name="gender" required > </br>
+            <label>FEMALE</label></br>
+            <input type="radio" id="female" name="gender" required> </br>
             <div class="btn">
                 <button type="submit" value="submit" class="btn btn-outline-info" onclick="akaname()">submit</button>
                 <button  type="reset" value="reset"class="btn btn-outline-danger" onclick="reset()">reset</button>
@@ -60,8 +65,8 @@
 
         </form>
     </div>
-
-    <div class="akan-name" id="aka-name">
+    <p id="aka-name"></p>
+    <!-- <div class="akan-name" id="aka-name"></div> -->
 
     </div>
     <script src="index.js"></script>
