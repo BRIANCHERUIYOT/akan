@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="test/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="test/bootstrap.min.css"> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 
     <title>akaname</title>
@@ -15,8 +15,9 @@
 </head>
 
 <body>
-    <div class="container bg-successs">
-        <legend id="legend">KNOW YOU AKAN NAME</legend>
+
+    <div class="container bg-successs col-sm-6">
+        <legend id="legend">KNOW YOUR AKAN NAME</legend>
         <form onsubmit="akaname(event)"><br>
             <p>You are to iput your date of birth and month and year so as we can give you your name in Akan.</p>
             <p></p>
@@ -29,7 +30,7 @@
             <div class="form-group row">
                 <label for="month" class="col-sm-2 col-form-label">Month</label>
                 <div class="col-sm-8">
-                    <input  name ="month" id="month" maxlength="2">
+                    <input  name ="month" id="month"maxlength="2">
                 </div>
             </div><br>
             <div class="form-group row">
@@ -40,23 +41,23 @@
             </div>
             <div><br>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
+                    <input class="form-check-input" type="radio" name="male" id="male">
+                    <label class="form-check-label" for="male">
                       male
                     </label>
                   </div><br>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <input class="form-check-input" type="radio" name="female" value="female" id="female">
+                    <label class="form-check-label" for="female">
                       female
                     </label>
                   </div>
                 </div><br>
-            <div>
-                <button type="button" class="btn btn-outline-warning" onclick="">submit</button>
-                <button type="button" class="btn btn-outline-warning">reset</button>
-
+            <div class="btn">
+                <button type="submit" value="submit" class="btn btn-outline-info" onclick="akaname()">submit</button>
+                <button  type="reset" value="reset"class="btn btn-outline-danger" onclick="reset()">reset</button>
             </div>
+
         </form>
     </div>
     <script src="index.js"></script>
