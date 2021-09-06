@@ -7,7 +7,7 @@ function akaname(e) {
 
 
 
-    
+
     var day = parseInt(document.getElementById("day").value)
     var month = parseInt(document.getElementById("month").value)
     var year = parseInt(document.getElementById("year").value);
@@ -45,13 +45,13 @@ function akaname(e) {
 
         for (var a = 0; a < maleName.length; a++) {
             if (a === dayOfTheWeek - 1) {
-                rname.innerHTML = "your Akan name is " + maleName[a];
+                rname.innerHTML = "Your Akan name is " + maleName[a];
             }
         }
     } else if (female.checked == true) {
         for (var a = 0; a < femaleName.length; a++) {
             if (a === dayOfTheWeek - 1) {
-                rname.innerHTML = "your Akan name is " + femaleName[a];
+                rname.innerHTML = "Your Akan name is " + femaleName[a];
             }
         }
 
