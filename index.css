@@ -1,11 +1,14 @@
 .container{
     align-items: center;
     background-color:darkgray;
-    background-image:
 }
 #legend {
     height: 100px;
     text-align:center;
     background-color:darkgreen;
-      /* color:blue; */
+}
+#aka-name {
+    color: purple;
+    text-align: center;
+    font-size:30px;
 }
